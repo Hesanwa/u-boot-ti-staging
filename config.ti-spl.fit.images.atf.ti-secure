@@ -1,0 +1,38 @@
+[ req ]
+distinguished_name     = req_distinguished_name
+x509_extensions        = v3_ca
+prompt                 = no
+dirstring_type         = nobmp
+
+[ req_distinguished_name ]
+C                      = US
+ST                     = TX
+L                      = Dallas
+O                      = Texas Instruments Incorporated
+OU                     = Processors
+CN                     = TI Support
+emailAddress           = support@ti.com
+
+[ v3_ca ]
+basicConstraints       = CA:true
+1.3.6.1.4.1.294.1.3    = ASN1:SEQUENCE:swrv
+1.3.6.1.4.1.294.1.34   = ASN1:SEQUENCE:sysfw_image_integrity
+1.3.6.1.4.1.294.1.35   = ASN1:SEQUENCE:sysfw_image_load
+1.3.6.1.4.1.294.1.37   = ASN1:SEQUENCE:firewall
+
+[ swrv ]
+swrv = INTEGER:1
+
+[ sysfw_image_integrity ]
+shaType                = OID:2.16.840.1.101.3.4.2.3
+shaValue               = FORMAT:HEX,OCT:8e189e7c2e065ee999cea16a5ec37a8beebeb614f81350f720aeb5e5071953c263a89bba1705af177cba456f5aa833d01b75ff3297b8351f92a03372ffeaf1b9
+imageSize              = INTEGER:52992
+
+[ sysfw_image_load ]
+destAddr = FORMAT:HEX,OCT:00000000
+authInPlace = INTEGER:0x2
+
+[ firewall ]
+numFirewallRegions = INTEGER:0
+
+

@@ -1,0 +1,6 @@
+#define PLAIN_VERSION "2024.04"
+#define U_BOOT_VERSION "U-Boot " PLAIN_VERSION
+#define U_BOOT_VERSION_NUM 2024
+#define U_BOOT_VERSION_NUM_PATCH 4
+#define CC_VERSION_STRING "aarch64-oe-linux-gcc (GCC) 13.3.0"
+#define LD_VERSION_STRING "GNU ld (GNU Binutils) 2.42.0.20240716"

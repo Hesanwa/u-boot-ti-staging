@@ -1,0 +1,5 @@
+ImagePos    Offset      Size  Name
+00000000  00000000  00007d65  tifsstub-hs
+00000000   00000000  000006b2  ti-secure-rom
+000006b2   000006b2  00000693  tifsstub-hs-cert.bin
+00000d45   00000d45  00007020  tifsstub-hs-enc.bin

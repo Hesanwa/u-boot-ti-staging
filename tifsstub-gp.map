@@ -1,0 +1,4 @@
+ImagePos    Offset      Size  Name
+00000000  00000000  000073ab  tifsstub-gp
+00000000   00000000  000003ab  ti-secure-rom
+000003ab   000003ab  00007000  tifsstub-gp.bin
